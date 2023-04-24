@@ -1,0 +1,214 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+  font-family: 'Roboto',sans-serif;
+}
+body{
+  background: #ededede6;
+}
+
+body.modeTwo{
+  background: black;
+}
+
+main{
+  display: grid;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+  font-size: 12.6rem;
+  min-height: 90vh;
+
+}
+.body{
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  gap: 19.2rem;
+}
+
+.clockwatch{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.timer{
+  display: flex;
+  padding: 0;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.30));
+}
+
+.timer.modeTwo{
+  color: white;
+  filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.75))
+}
+
+.controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "A B"
+  "C D";
+  gap: 3.2rem;
+}
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+button svg path{
+  fill: black;
+  
+}
+
+button.start,
+button.stop,
+button.plus,
+button.minus{
+  border: none;
+  background: none;
+}
+
+button.forest,
+button.rain,
+button.coffee,
+button.fire{
+  width: 138px;
+  height: 152px;
+  left: 746px;
+  top: 196px;
+  border: none;
+  background: #ededede6;
+  border-radius: 24px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+button.sound{
+background: hsla(194, 97%, 31%, 1)
+}
+
+button.sound svg path{
+  fill: white;
+}
+
+.volume{
+  width: 75%;
+  height: 6px;
+  margin-top: 28px;
+  cursor: pointer;
+  appearance: none;
+  background-color: #000000c6;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.50));
+}
+
+.volume::-webkit-slider-thumb{
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  background-color: #000000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.volume.modeTwo{
+  width: 75%;
+  height: 6px;
+  margin-top: 28px;
+  cursor: pointer;
+  appearance: none;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.259))
+}
+
+button.forest.modeTwo,
+button.rain.modeTwo,
+button.coffee.modeTwo,
+button.fire.modeTwo{
+  background:hsla(240, 6%, 17%, 1);
+  filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.50))
+}
+
+button.sound input[type="range"]{
+  width: 75%;
+  height: 6px;
+  margin-top: 28px;
+  cursor: pointer;
+  appearance: none;
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+button.sound input[type="range"]::-webkit-slider-thumb{
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  background-color: #f6f6f6;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+
+.volume.modeTwo::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  appearance: none;
+  background-color: #f6f6f6;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.modeTwo svg path{
+  fill: #C4C4CC;
+}
+
+
+
+button.sound2{
+  background: hsla(195, 74%, 15%, 1);
+}
+
+button.sound2 svg path{
+  fill: white;
+}
+
+button.modeTwo.sound2{
+  background: hsla(195, 74%, 15%, 1);
+}
+button.modeTwo.sound2 svg path{
+  fill: white;
+}
+
+
+
+button.lightmode,
+button.darkmode {
+position: absolute;
+right: 5%;
+top: 8.89%;
+
+background: transparent;
+border: none;
+}
+
+
+.mode{
+  display: none;
+}
+
+button.darkmode.modeTwo{
+  filter: drop-shadow(0px 4px 4px rgb(255, 255, 255, .5))
+}
